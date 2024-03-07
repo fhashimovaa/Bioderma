@@ -1,0 +1,165 @@
+.header {
+
+    &__content {
+        background: #6BACC8;
+        height: 40px;
+        color: white;
+
+        & p {
+            text-align: center;
+
+
+
+        }
+
+        .icon {
+            position: absolute;
+            top: 0px;
+            right: 65px;
+
+            & img {
+                vertical-align: middle;
+            }
+        }
+    }
+
+    &__head-bucket {
+        position: relative;
+
+        & span {
+            background-color: #6BACC8;
+            font-size: 12px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            padding: 0px 3px 0px 5px;
+            position: absolute;
+            left: 29px;
+            bottom: 11px;
+        }
+    }
+
+    &__head-icons {
+        @include flexbox;
+    }
+
+    &__main-input {
+        color: #a7b1ab;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+        outline: none;
+    }
+
+    &__search {
+        @include flexbox;
+        position: relative;
+
+        & div {
+            position: absolute;
+            right: 3px;
+            background: white;
+        }
+    }
+
+    &__head {
+        @include flexbox;
+        height: 68px;
+
+
+        & div {
+            & img {
+                padding: 0px 15px 0px 15px;
+            }
+
+            & input {
+                padding: 5px 10px;
+                width: 250px;
+                padding-right: 52px;
+            }
+
+        }
+
+
+    }
+
+    &__title {
+        border-bottom: 1px solid #ACACAC;
+
+    }
+
+    &__nav-title {
+        padding-bottom: 15px;
+        padding-top: 15px;
+        border-bottom: 1px solid #ACACAC;
+        border-top: 1px solid #ACACAC;
+        margin-bottom: 20px
+    }
+
+    &__nav {
+        @include flexbox;
+        border-bottom: 1px;
+
+        & li {
+            font-weight: 600;
+            font-size: 13px;
+            padding: 12px 15px 12px 15px;
+            transition: 1s;
+            // display: none;
+
+        }
+
+        & li:hover {
+            cursor: pointer;
+            background-color: #404040;
+            color: white;
+            transition: 1s;
+        }
+
+        & a {
+            color: black;
+            font-size: 18px;
+            padding: 10px;
+            transition: 1s;
+            display: none;
+        }
+
+        & a:hover {
+            background-color: #404040;
+            color: white;
+            transition: 1s;
+        }
+
+    }
+
+    &__aside {
+        position: fixed;
+        top: 0px;
+        width: 300px;
+        height: 100%;
+        background-color: white;
+        z-index: 9999;
+        display: none;
+
+        & img {
+            text-align: center;
+            display: block;
+            margin: 0px auto;
+            // 
+        }
+
+        &-nav {
+            
+            & li {
+                padding: 10px 18px;
+                transition: 1s;
+                margin-bottom: 5px;
+            }
+
+            & li:hover {
+                background-color: #404040;
+                color: white;
+                transition: 1s;
+            }
+        }
+    }
+}
